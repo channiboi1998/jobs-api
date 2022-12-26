@@ -1,0 +1,22 @@
+-- JOBS API --
+1. Install the dependencies.
+2. Create `Auth` Controller Methods:
+	- register
+	- login
+3. Create `Jobs` Controller Methods:
+	- getAllJobs
+	- getJob
+	- createJob
+	- updateJob
+	- deleteJob
+4. Create the routes for `Auth` & `Jobs` Controllers.
+5. Setup connection to the DB.
+6. Create `User` Model Schema.	
+	- name: string, required, add error message.
+	- email: string, required, add error message, add `min` and `max` length, add match regex (second parameter is error message), unique.
+	- password: string, required, add error message.
+7. User registration
+	- Validate with mongoose.
+	- hash password (with bcrypt).
+	- create token.
+	- save token to response.
