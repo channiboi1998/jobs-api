@@ -13,6 +13,7 @@ app.use(express.json());
 
 // routes
 app.use('/api/user', require('./routes/auth'));
+app.use('/api/jobs', require('./routes/jobs'));
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
